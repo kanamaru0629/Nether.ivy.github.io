@@ -1,0 +1,129 @@
+/* 全体 */
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: #1b0f0a;
+  color: #f5f5f5;
+}
+
+/* ヘッダー */
+header {
+  background: linear-gradient(#3a0d0d, #1b0f0a);
+  padding: 30px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  letter-spacing: 3px;
+}
+
+/* メイン */
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* 見出し */
+h2 {
+  border-left: 6px solid crimson;
+  padding-left: 10px;
+  margin-top: 60px;
+}
+
+/* カード */
+.card,
+.biome,
+.structure {
+  background: #2a1612;
+  padding: 15px;
+  margin: 20px 0;
+  border-radius: 10px;
+}
+
+/* テーブル */
+.mc-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.mc-table th,
+.mc-table td {
+  border: 1px solid #555;
+  padding: 10px;
+}
+
+.mc-table th {
+  background: #3a0d0d;
+}
+
+/* 画像 */
+img {
+  margin-top: 10px;
+}
+
+/* モブ画像 */
+.mob-img {
+  width: 150px;
+  display: block;
+}
+
+/* ===== 目次（サイドバー） ===== */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -260px;
+  width: 240px;
+  height: 100%;
+  background: #2a1612;
+  padding: 20px;
+  transition: 0.3s;
+  z-index: 1000;
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+.sidebar h3 {
+  margin-top: 0;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin: 10px 0;
+}
+
+.sidebar a {
+  color: #f5f5f5;
+  text-decoration: none;
+}
+
+/* 目次ボタン */
+.toggle-btn {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  background: crimson;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  z-index: 1100;
+  border-radius: 5px;
+}
+
+/* フッター */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #120707;
+  margin-top: 40px;
+}
