@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ネザー大体紹介サイト</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- 目次開閉ボタン -->
+<button class="toggle-btn" onclick="toggleSidebar()">☰ 目次</button>
+
+<header>
+  <h1>MINECRAFT NETHER</h1>
+</header>
+
+<!-- サイドバー（目次） -->
+<nav class="sidebar" id="sidebar">
+  <h3>目次</h3>
+  <ul>
+    <li><a href="#intro" onclick="toggleSidebar()">はじめに</a></li>
+    <li><a href="#caution" onclick="toggleSidebar()">注意事項</a></li>
+    <li><a href="#biome" onclick="toggleSidebar()">バイオーム</a></li>
+    <li><a href="#structure" onclick="toggleSidebar()">構造物</a></li>
+    <li><a href="#block" onclick="toggleSidebar()">ブロック</a></li>
+    <li><a href="#mob" onclick="toggleSidebar()">モブ</a></li>
+    <li><a href="#progress" onclick="toggleSidebar()">進捗（JAVA版）</a></li>
+    <li><a href="#achievements" onclick="toggleSidebar()">実績（統合版）</a></li>
+    <li><a href="#other" onclick="toggleSidebar()">その他</a></li>
+    <li><a href="#end" onclick="toggleSidebar()">おわりに</a></li>
+  </ul>
+</nav>
+
+<!-- メインコンテンツ -->
+<div class="container">
+
+  <h2 id="intro">はじめに</h2>
+  <p>
+    ネザーってのは、Mojang Studios（モヤンスタジオ）が開発したゲーム「MINECRAFT」に登場する別世界の名前でな
+    燃える火と溶岩、さらに敵対モブがいっぱいの危険な世界となってるんや。
+    しかし、初めての人からすれば怖いと思われがちやけど実際は違うんよ。
+    敵対モブがいる反面、この世界で貴重な体験もあってやな、この世界を探索すれば今後の冒険に役立つかもしれへん。
+    （現在のネザーになったのは2020年6月23日にリリースされた、バージョン1.16（JAVA版）1.16.0（統合版）によるアップデートで
+    このアップデートでネザーが刷新された日を境に今まで１種類だったバイオームが５種類に増え、新しく４種類のモブが増えた他、
+    ブロックも多く追加されました。）
+    ちなみに僕自身は「まあ、要素が増えるんだったらそれでいいか」と思ってた。
+  </p>
+
+  <h2 id="caution">注意事項</h2>
+  <div class="card">
+    <ul>
+      <li>ネザー内でベッドで寝ようとすると爆発します。（結構爆発力高い）</li>
+      <li>ネザーで死ぬと通常世界でリスポーンする。（ネザー内でリスポーンしたい場合はその他参照）</li>
+      <li>時計とコンパスは回転するため時間と場所がわからなくなる。</li>
+      <li>水は設置できない。（設置するとシューってなる）</li>
+      <li>ネザーゲートは縦５、横４で作る。</li>
+    </ul>
+  </div>
+
+  <h2 id="biome">主なバイオーム（の大体紹介）</h2>
+  <div class="biome">
+    <img src="img/Nether_Wastes.png" alt="ネザーの荒地" style="width: 100%; border-radius: 10px;">
+    <h3>ネザーの荒地 (Nether Wastes)</h3>
+    <p>一般的なネザーのバイオーム。アプデされるまでこのバイオームしかなかった。<br>
+      ゾンビピグリンやガストがよく出現する。</p>
+  </div>
+
+  <div class="biome">
+    <img src="img/Crimson_Forest.png" alt="真紅の森" style="width: 100%; border-radius: 10px;">
+    <h3>真紅の森 (Crimson Forest)（アプデ追加バイオーム）</h3>
+    <p>赤い巨大キノコの森。基本的に赤いブロックで構成されている。<br>
+      ゾンビピグリンやホグリン、ピグリンが出現する。</p>
+  </div>
+
+  <div class="biome">
+    <img src="img/Warped_Forest.png" alt="歪んだ森" style="width: 100%; border-radius: 10px;">
+    <h3>歪んだ森 (Warped Forest)（アプデ追加バイオーム）</h3>
+    <p>青い巨大キノコの森。結構ホラー感があるバイオーム。<br>
+      エンダーマンしか出現しない。エンダーパール集めに最適なバイオーム。</p>
+  </div>
+
+  <div class="biome">
+    <img src="img/Basalt_Deltas.png" alt="玄武岩デルタ" style="width: 100%; border-radius: 10px;">
+    <h3>玄武岩デルタ（アプデ追加バイオーム）</h3>
+    <p>玄武岩とブラックストーンで構成された火山系のバイオーム。常に火山灰が漂っている。<br>
+    主にマグマキューブの出現率が高い。特徴は足場が悪い。</p>
+  </div>
+
+  <div>
+    <img src="img/1200px-NetherCaveUpdate.png" alt="ソウルサンドの谷" style="width: 100%; border-radius: 10px;">
+    <h3>ソウルサンドの谷（Soul Sand Valley）（アプデ追加バイオーム）</h3>
+    <p>このバイオームはソウルサンドとソウルソイルで構成されている。玄武岩の柱やネザーの化石が所々に生成されている。<br>
+    主にガストとスケルトンの出現率が高い。特徴は青い霧のようなものが発生している。</p>
+  </div>
+
+  <h2 id="structure">特徴的な構造物（の大体紹介）</h2>
+  <div class="structure">
+    <img src="img/200px-Fortress_Intersection.png" alt="ネザー要塞" style="width:100%; border-radius:10px;">
+    <h3>ネザー要塞</h3>
+    <p>ブレイズやウィザースケルトンが出る危険な構造物。<br>
+    要塞探索は修羅の道ともいえる。全てのバイオームで発見できる。</p>
+  </div>
+
+  <div class="structure">
+    <img src="img/800px-Bastion_Remnant_2.png" alt="砦の遺跡" style="width:100%; border-radius:10px;">
+    <h3>砦の遺跡</h3>
+    <p>この構造物はブラックストーン系の建材でできた要塞で<br>
+    金ブロックが多く生成される。玄武岩デルタ以外のバイオームで見つかる。</p>
+  </div>
+
+  <div class="structure">
+    <img src="img/220px-Nether_fossil_6.png" alt="ネザーの化石" style="width:100%; border-radius:10px;">
+    <h3>ネザーの化石</h3>
+    <p>ソウルサンドの谷に生成される謎の化石。<br>
+    この化石の近くに乾燥したガストがたまに生成される。</p>
+  </div>
+
+  <h2 id="block">主なブロック（大体）</h2>
+
+<table class="mc-table">
+  <thead>
+    <tr>
+      <th>ブロック名</th>
+      <th>特徴・用途</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ネザーラック</td>
+      <td>火を付けると永遠に燃え続ける。</td>
+    </tr>
+    <tr>
+      <td>ソウルサンド</td>
+      <td>プレイヤーやモブの移動速度が低下する。魂の炎を発生させられる。</td>
+    </tr>
+    <tr>
+      <td>ソウルソイル</td>
+      <td>移動速度は低下しない。これも火を付けると魂の炎が発生する。</td>
+    </tr>
+    <tr>
+      <td>ネザークォーツ鉱石</td>
+      <td>レッドストーン回路や建築素材に使われる。</td>
+    </tr>
+    <tr>
+      <td>ネザー金鉱石</td>
+      <td>掘ると金塊が手に入るが、近くにピグリンがいると敵対される。</td>
+    </tr>
+    <tr>
+      <td>ブラックストーン系</td>
+      <td>砦の遺跡や玄武岩デルタで多く見られる。</td>
+    </tr>
+    <tr>
+      <td>古代の残骸</td>
+      <td>非常に硬い鉱石。主にY=16付近で見つかる。</td>
+    </tr>
+    <tr>
+      <td>グロウストーン</td>
+      <td>天井付近に塊で生成される光源ブロック。</td>
+    </tr>
+    <tr>
+      <td>真紅のブロック系</td>
+      <td>真紅の森でしか手に入らへん。</td>
+    </tr>
+    <tr>
+      <td>歪んだブロック系</td>
+      <td>歪んだ森でのみ手に入らんのよ。</td>
+    </tr>
+    <tr>
+      <td>まだ他にも多くあるんやで</td>
+      <td>ー</td>
+    </tr>
+  </tbody>
+</table>
+
+  <h2 id="mob">主なモブ</h2>
+
+  <div class="card">
+    <img src="img/150px-Zombified_Piglin_BE6.png" alt="ゾンビピグリン" class="mob-img">
+    <h3>ゾンビピグリン</h3>
+    <p>ネザーの代表的な存在の中立モブ。アプデ前はゾンビピッグマン。<br>
+    攻撃すると周囲にいるやつも襲ってくる。倒すと腐った肉と金塊、金の剣を落とす。<br>
+    ピグリンやピグリンブルートを通常世界に連れてくるとゾンビピグリンになる。</p>
+  </div>
+
+  <div class="card">
+    <img src="img/Ghast_JE3_BE3.gif" alt="ガスト" class="mob-img">
+    <h3>ガスト</h3>
+    <p>泣き声が特徴的な巨大浮遊モブ。近づくとロックオンされる。<br>
+      口から爆発する火の玉を撃ってくる遠距離型のモブ。倒すとガストの涙と火薬、レコード「Tears」を落とす。</p>
+  </div>
+
+  <div class="card">
+    <img src="img/Blaze_BE3.gif" alt="ブレイズ" class="mob-img">
+    <h3>ブレイズ</h3>
+    <p>ネザー要塞内でのみ出現する。単体出現もしくはスポーンブロックで複数体が出現する。<br>
+      当たると燃える火球を三発撃ってくる。ブレイズロッドを落とす。弓か雪玉で遠距離から狙おう。</p>
+  </div>
+
+  <div class="card">
+    <img src="img/800px-Wither_Skeleton_JE4_BE3.png" alt="ウィザースケルトン" class="mob-img">
+    <h3>ウィザースケルトン</h3>
+    <p>ネザー要塞内でのみ出現する弓でなく剣を持った黒いスケルトン。<br>
+      高さ３ブロック分の身長で、倒すと石炭と骨と石の剣、たまに頭蓋骨を落とす。</p>
+  </div>
+
+  <div class="card">
+    <img src="img/Piglin_JE1.png" alt="ピグリン" class="mob-img">
+    <h3>ピグリン（アプデ追加モブ）</h3>
+    <p>豚型中立モブ。金装備を付けてないと敵対モブに変貌する。<br>
+      金インゴットを渡せば交易ができ、アイテムと交換してくれる。金の剣かクロスボウを装備した個体が出現する。</p>
+  </div>
+
+  <div class="card">
+    <img src="img/Piglin_Brute_JE1_BE1.png" alt="ピグリンブルート" class="mob-img">
+    <h3>ピグリンブルート（アプデ追加モブ）</h3>
+    <p>豚型完全敵対モブ。ピグリン亜種で、普通に襲ってくる。<br>
+    金装備も意味が無く、交易もできない。金の斧を装備し、砦の遺跡にのみ出現。</p>
+  </div>
+
+  <div class="card">
+    <img src="img/800px-Hoglin_JE3.png" alt="ホグリン" class="mob-img">
+    <h3>ホグリン（アプデ追加モブ）</h3>
+    <p>真紅の森に出現する豚型敵対モブ。<br>
+    歪んだキノコを避ける性質がある。倒すと生の豚肉と革を落とす。</p>
+  </div>
+
+  <div class="card">
+    <img src="img/800px-Zoglin_JE1.png" alt="ゾグリン" class="mob-img">
+    <h3>ゾグリン（アプデ追加モブ）</h3>
+    <p>ホグリンを通常世界に連れてくることで発生するモブ。<br>
+    常に敵対しており、歪んだキノコを避けなくなる。倒すと腐った肉を落とす。</p>
+  </div>
+
+  <div class="card">
+    <img src="img/150px-Strider_JE2_BE2.gif" alt="ストライダー" class="mob-img">
+    <h3>ストライダー（アプデ追加モブ）</h3>
+    <p>全てのネザーバイオームで出現する。<br>
+    ネザー唯一の友好モブで、溶岩の上を歩ける。鞍を付けるとその上に乗れるんよ。</p>
+  </div>
+
+<h2 id="progress">ネザー関連の大体の進捗と挑戦（JAVA版）</h2>
+
+<table class="mc-table">
+  <thead>
+    <tr>
+      <th>進捗名</th>
+      <th>条件</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>さらなる深みへ</td>
+      <td>ネザーに行くだけや</td>
+    </tr>
+    <tr>
+      <td>恐ろしい要塞</td>
+      <td>ネザー要塞に入る</td>
+    </tr>
+    <tr>
+      <td>兵どもが夢の跡</td>
+      <td>砦の遺跡に入る</td>
+    </tr>
+    <tr>
+      <td>差出人に返送</td>
+      <td>ガストの火の玉をうまいこと跳ね返して倒すんやで</td>
+    </tr>
+    <tr>
+      <td>亜空間バブル</td>
+      <td>ネザーで８７５ブロック移動する（大移動）</td>
+    </tr>
+    <tr>
+      <td>猛烈なカクテル</td>
+      <td>全種類のポーション効果を受けるんや</td>
+    </tr>
+  </tbody>
+</table>
+
+  <h2 id="achievements">ネザー関連の大体の実績（統合版）</h2>
+
+<table class="mc-table">
+  <thead>
+    <tr>
+      <th>実績名</th>
+      <th>条件</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>炎の中へ</td>
+      <td>ブレイズロッドを拾う</td>
+    </tr>
+    <tr>
+      <td>熱に負けない</td>
+      <td>火炎耐性効果を付けて溶岩の中を泳ぐ</td>
+    </tr>
+    <tr>
+      <td>わーキレイ！</td>
+      <td>金を使いピグリンの気をそらす</td>
+    </tr>
+    <tr>
+      <td>仕返し</td>
+      <td>火の玉でガストを倒す</td>
+    </tr>
+    <tr>
+      <td>がれきのカバー</td>
+      <td>ネザライト装備一式を装備する</td>
+    </tr>
+    <tr>
+      <td>ホットな観光地</td>
+      <td>全部のネザーバイオームに訪れる</td>
+    </tr>
+  </tbody>
+</table>
+
+  <h2 id="other">その他</h2>
+  <ul>
+    <li>刷新（さっしん）ってのは古いものや今のものを新しいものに変えることやで。</li>
+    <li>Mojang（モヤン）はスウェーデンのゲーム会社やってんけど、現在はマイクロソフト社の傘下なんやって。</li>
+    <li>濡れたスポンジを設置するとスポンジになる。（へぇー）</li>
+    <li>大釜には水を設置できるんやで。（ふーん）</li>
+    <li>氷は設置しても水を出すことができないが氷塊や青の氷は設置しても溶けない。</li>
+    <li>スノーゴーレムは召喚できないんよ。熱ダメージで死んでまう。</li>
+    <li>ロードストーンにコンパスを同期させれば迷うことないで。</li>
+    <li>地図を使用するとプレイヤーの方向インジケーターが回転してまうんよ。</li>
+    <li>ネザーではリスポーンアンカーを使用してリスポーンが可能やねんけど４回までやな。</li>
+    <li>リスポーンアンカーは通常世界で使うと爆発してまう。</li>
+    <li>ネザーには通常スケルトンやエンダーマンも存在してんねん。</li>
+    <li>火炎耐性があればええんやからエンチャントされた金のリンゴでもいけるで。</li>
+    <li>猛烈なカクテルはブレイズロッドを手に入れてないと絶対に達成できんのよ。</li>
+    <li>全ての効果（耐火・毒・耐性・暗視・透明化・再生・跳躍・俊敏・鈍足・水中呼吸・攻撃力上昇・低速落下・弱体化・蓄風・虫食い・巣張り・滲出）</li>
+  </ul>
+
+  <h2 id="end">おわりに</h2>
+  <p>
+    ネザーは危険でありながらも、貴重な資源や多様なモブが存在する別世界です。
+    初心者にとっては厳しい環境ですが、知識を付けて挑戦すれば冒険が楽しくなるでしょう！<br>
+    （っておーい、アプデって５年前やないかーい！５年前からそんな変わってないやんけぇ！）
+    （このサイトは大体の情報しか載ってません。初心者の皆さん、ご了承ください。）
+  </p>
+
+</div>
+
+<footer>
+  © 2025 MINECRAFT NETHER GUIDE
+</footer>
+
+<!-- 開閉スクリプト -->
+<script>
+  function toggleSidebar() {
+    const sidebar = document.querySelector('.sidebar');
+    sidebar.classList.toggle('open');
+  }
+</script>
+
+</body>
+</html>
